@@ -1,0 +1,82 @@
+[11:22:41] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.5.0-SNAPSHOT (git-f712997d-b593)...
+[11:22:42] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[11:22:42] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[11:22:42] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[11:22:43] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[11:22:43] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[11:22:44] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.8...
+[11:22:44] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[11:22:44] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[11:22:44] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity.<init>(PlatformPluginVelocity.java:255)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$8b346.GUICE$TRAMPOLINE(<generated>)
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$8b346.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1186)
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.createPlugin(JavaPluginLoader.java:127)
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:173)
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:436)
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:307)
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71)
+[11:22:44] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.8 by lax1dude
+[11:22:44] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viaversion 5.8.1 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[11:22:44] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viabackwards 5.8.1 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[11:22:44] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin viarewind 4.0.15 by EnZaXD, Gerrygames, creeper123123321
+[11:22:44] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
+[11:22:44] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[11:22:44] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.8...
+[11:22:44] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[11:22:45] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[11:22:46] [Via-Mappingloader-1/INFO] [viaversion]: Loading block connection mappings ...
+[11:22:47] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[11:22:47] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[11:22:47] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[11:22:47] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[11:22:47] [EaglercraftXServer - Task Executor #0/INFO] [viabackwards]: Loading translations...
+[11:22:47] [EaglercraftXServer - Task Executor #0/INFO] [viabackwards]: Registering protocols...
+[11:22:48] [EaglercraftXServer - Task Executor #0/INFO] [viarewind]: Registering protocols...
+[11:22:48] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[11:22:48] [EaglercraftXServer - Task Executor #0/INFO] [viaversion]: Highest supported version by the proxy: 26.1 (775)
+[11:22:48] [ViaVersion - Task Executor #2/INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[11:22:49] [Netty epoll Worker #2/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xc93ef52a, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[11:22:49] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[11:22:49] [Netty epoll Worker #3/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xc3a14c12, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[11:22:49] [Netty epoll Worker #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x2b04af2f, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[11:22:49] [Netty epoll Worker #1/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x376cd582, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[11:22:49] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[11:22:49] [Netty epoll Worker #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[11:22:49] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[11:22:49] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (8.04s)!
+[11:23:14] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] IHateMyGrades (/[0:0:0:0:0:0:0:1]:41950) has connected
+[11:23:14] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] IHateMyGrades -> lobby has connected
+[11:23:15] [Netty epoll Worker #2/WARN] [viabackwards]: (1.17->1.16.4) Increased world height is NOT SUPPORTED for 1.16 players and below. They will see a void below y 0 and above 256. You can enable the `bedrock-at-y-0` config option to replace the air with a bedrock layer.
+[11:24:08] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] IHateMyGrades (/[0:0:0:0:0:0:0:1]:41950): kicked from server lobby: Server is restarting
+[11:24:08] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] IHateMyGrades -> lobby has disconnected
+[11:24:08] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] IHateMyGrades (/[0:0:0:0:0:0:0:1]:41950) has disconnected: You were kicked from lobby: Server is restarting
+[11:27:31] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] IHateMyGrades (/[0:0:0:0:0:0:0:1]:46570) has connected
+[11:27:32] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] IHateMyGrades -> lobby has connected
+[11:28:50] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] IHateMyGrades (/[0:0:0:0:0:0:0:1]:46570) has disconnected
+[11:28:50] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] IHateMyGrades -> lobby has disconnected
+[11:28:54] [Thread-2/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[11:28:54] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[11:28:54] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[11:28:54] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[11:28:54] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[11:28:54] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.8...
+[11:28:54] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[11:28:54] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
