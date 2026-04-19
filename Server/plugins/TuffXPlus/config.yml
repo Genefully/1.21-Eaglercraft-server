@@ -11,6 +11,8 @@ y0:
   # Worlds for y0 to be enabled in
   enabled-worlds:
     - 'world'
+    - 'world_nether'
+    - 'world_the_end'
 
   # The amount of threads for the chunk processor to use - using more threads processes chunks faster, but increases CPU usage
   # -1 is automatic
@@ -55,7 +57,7 @@ viablocks:
   # Sync mode controls how often chunk and block updates are sent to clients.
   # normal: base speed for fast sync.
   # reduced: much slower updates to minimize client lag.
-  sync-mode: normal
+  sync-mode: reduced
 
 
 # //=\\ ==== ||  || ||== ||\\

@@ -1,0 +1,95 @@
+#
+##################################################
+# HOW TO CREATE SPOTIFY APP?
+#
+# 1. Go to this website -> https://developer.spotify.com/dashboard
+# 2. Click on "Create app" in the top left corner
+# 3. Fill out -> App name, App description
+# 4. You'll need a HTTP server with a link, paste it in the "Redirect URIs" and end it with a "/callback" example: https://example.org/callback
+# 5. Select "Web API" @ the "Which API/SDKs are you planning to use?"
+# 6. Check "I understand and agree with Spotify's Developer Terms of Service and Design Guidelines"
+
+# NOTE
+# The plugin first will only detect the owner of the App BECAUSE it's in the developer status, to get out follow the instructions below
+#
+# 1. Go to your App
+# 2. You'll see an App Status at the top, click on the little "i" letter on the right
+# 3. The link will drop you here -> https://developer.spotify.com/documentation/web-api/concepts/quota-modes
+# 4. You'll see a section like -> "Quota Extension Request for New Potential Partners"
+# 5. Fill out the form, if you are handy you can photoshop pictures since Spotify made their API REALLY restrict, sadly...
+# 6. The form will take about 1-2 days, if you are accepted your players will be able to use the plugin freely!
+#
+##################################################
+#
+
+spotify:
+  client-id: spotify-client-id
+  client-secret: spotify-client-secret
+  redirect-uri: https://your-link/callback # Must end with a /callback like in the Spotify App
+  redirect-uri-port: 8080
+  scopes:
+  - user-read-currently-playing
+  - user-read-playback-state
+  - user-modify-playback-state
+  - user-read-private
+
+aliases:
+- spotify
+- spotifylink
+- mcspotifylink
+
+database:
+  type: JSON # MYSQL, H2, JSON
+  
+  mysql:
+    host: localhost
+    port: 3306
+    database: coma112
+    username: root
+    password: ''
+
+toast:
+  enabled: true
+  message: '&f&lPLAYING &8» &a{name}' # You can use the {author} tag too, but expect it to be long ash.
+  material: MUSIC_DISC_CAT
+
+gui:
+  track-item:
+    material: MUSIC_DISC_CAT
+    name: '&#39fc03{name} &7- &#39fc03{author}'
+    lore:
+    - ''
+    - ' &8&l| &7Length &8» &#39fc03{length}'
+    - ''
+    - ' &8&l| &7ᴄʟɪᴄᴋ &8» &fᴘʟᴀʏ'
+    - ''
+  playlist-item:
+    material: JUKEBOX
+    name: '&#39fc03{name} &8- &8(&#39fc03{count}&8)'
+    lore:
+    - ''
+    - ' &8&l| &7ᴄʟɪᴄᴋ &8» &fᴏᴘᴇɴ'
+    - ''
+
+web-errors:
+  spotify-error: 'Spotify Error: {error}'
+  no-code: Missing auth code! Check your Spotify Developer Dashboard!
+  no-state: Missing state parameter! Check your Spotify Developer Dashboard!
+  no-player: No player found online!
+  invalid-player: Invalid player ID
+
+placeholders:
+  'true': '&a☑'
+  'false': '&c☒'
+
+songs-timestamp:
+  show-enabled: true # It will appear in the actionbar, if it's disabled then you can still use it as a placeholder!
+  character: '|'
+  passed: '&a'
+  remaining: '&7'
+  playing: '&a▶'
+  pause: '&c⏸'
+  length: 60 # Number of characters to be shown
+  actionbar: '{timestamp} &a{passedLength}&7/&a{remainingLength} &8&l| &#39fc03{song} &7● &#39fc03{author} &8&l| {state}'
+
+
